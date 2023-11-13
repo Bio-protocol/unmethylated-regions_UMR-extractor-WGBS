@@ -17,6 +17,7 @@ This is an example workflow to check the quality of the paired-end fastq files u
     - [fastQC v0.11.5](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
     - [BSMAP v2.74](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-10-232)
     - [samtools v1.3](https://github.com/samtools/samtools)
+          - [samtools v0.1.18](https://github.com/samtools/samtools) is also required to run BSMAP
     - [bamtools v2.4.0](https://github.com/pezmaster31/bamtools/)
     - [Java v1.8.0_45](https://www.oracle.com/java/technologies/downloads/) 
     - [Picard v2.9.0](https://broadinstitute.github.io/picard/)
@@ -63,7 +64,7 @@ sh workflow/1_trim_reads.sh
 #### Step 2: Mapping reads using BSMAP
 
 ```
-sh workflow/2_map_reads.sh
+sh workflow/2_map_reads.sh <samtool 0.1.18 path>
 ```
 
 #### Step 3: View the results
@@ -71,7 +72,7 @@ sh workflow/2_map_reads.sh
 - Results can be converted into a bigWig format, which can be visualized using IGV.
 
 ```
-3_visualize_results.sh
+sh 3_visualize_results.sh <bedgraph2BigWig path>
 ```
 
 #### Step 4: Identify unmethylated regions
