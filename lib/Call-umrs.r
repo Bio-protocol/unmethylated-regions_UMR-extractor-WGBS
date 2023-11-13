@@ -11,8 +11,8 @@
 
 # Arguments
 ## Defaults
-input  <- "./"
-output <- "./"
+input   <- "./"
+out_dir <- "./"
 
 #Sample selection #####
 args <- commandArgs(trailingOnly=TRUE)
