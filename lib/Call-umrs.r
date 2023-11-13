@@ -10,9 +10,6 @@
 # We suggest removing organelles from the data before proceeding with this step
 
 # Arguments
-## Defaults
-input   <- getwd()
-out_dir <- getwd()
 
 #Sample selection #####
 args <- commandArgs(trailingOnly=TRUE)
@@ -25,6 +22,10 @@ MR_percent            <- as.double(args[4])
 UMR_percent           <- as.double(args[5])
 input                 <- as.character(args[6])
 out_dir               <- as.character(args[7])
+
+## Default paths
+if (is.na(input))   input   <- getwd()
+if (is.na(out_dir)) out_dir <- getwd()
 
 ######## argument recommendations
 ######## de bug
