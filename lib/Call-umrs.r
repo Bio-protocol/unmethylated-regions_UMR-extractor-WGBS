@@ -11,8 +11,8 @@
 
 # Arguments
 ## Defaults
-input   <- "./"
-out_dir <- "./"
+input   <- getwd()
+out_dir <- getwd()
 
 #Sample selection #####
 args <- commandArgs(trailingOnly=TRUE)
