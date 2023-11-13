@@ -9,6 +9,11 @@
 # Notes
 # We suggest removing organelles from the data before proceeding with this step
 
+# Arguments
+## Defaults
+input  <- "./"
+output <- "./"
+
 #Sample selection #####
 args <- commandArgs(trailingOnly=TRUE)
 print(args)
