@@ -1,8 +1,8 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
-## Overview of an example workflow: Fastq data quality checking
+## Identifying unmethylated regions from methylation data
 
-This is an example workflow to check the quality of the paired-end fastq files using `FastQC` software.
+This workflow identifies stably unmethylated regions in plant genomes using methylation data.
 
 ![](graphs/diagram.png)
 
@@ -50,7 +50,14 @@ TGATTTGAAATTAAACGAATATGGAAATCGGTTTGAAGGTTTTGGAATCGAGTATAATTGGATTTACAAATGTGGTTTAT
 +
 CCCCCGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGFGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG@
 ```
+Other input files are also required, such as:
 
+1) A reference genome.
+
+
+
+3) A file containing chromosome sizes.
+4) A reference genome cytosine tile file.
 
 ## Major steps
 
