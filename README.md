@@ -50,14 +50,38 @@ TGATTTGAAATTAAACGAATATGGAAATCGGTTTGAAGGTTTTGGAATCGAGTATAATTGGATTTACAAATGTGGTTTAT
 +
 CCCCCGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGFGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG@
 ```
+
 Other input files are also required, such as:
 
 1) A reference genome.
+2) A file containing chromosome sizes.
+Each entry consists of two columns: the chromosome and the size of the chromosome.
 
+Here is the example file:
+```
+maize_chr1_reference	20000
+```
 
+3) A reference genome cytosine tile file.
 
-3) A file containing chromosome sizes.
-4) A reference genome cytosine tile file.
+The file contains 6 columns:
+    1) The chromosome number
+    2) Start of the 100bp tile
+    3) End of the 100bp tile
+    4) Number of CG sites in the 100bp tile
+    5) Number of CHG sites in the 100bp tile
+    6) Number of CHH sites in the 100bp tile
+
+Here are the first 5 lines of the example tile file:
+```
+chr	start	end	cg_sites	chg_sites	chh_sites
+maize_chr1_reference	1	100	4	6	29
+maize_chr1_reference	101	200	6	7	25
+maize_chr1_reference	201	300	6	4	36
+maize_chr1_reference	301	400	2	10	28
+```
+
+More example tile files are found in the example_genomes folder in the input folder.
 
 ## Major steps
 
