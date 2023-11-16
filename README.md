@@ -81,7 +81,7 @@ maize_chr1_reference	201	300	6	4	36
 maize_chr1_reference	301	400	2	10	28
 ```
 
-More example tile files are found in the example_genomes folder in the input folder.
+More example tile files can found in the example_genomes folder in the input folder. They will be provided by UQeSpace, with the DOI being available when the article is published.
 
 ## Major steps
 
